@@ -15,5 +15,5 @@ defmodule ElixirEuler.Problem001 do
     )
   end
 
-  def solve, do: IO.puts "001 -> #{inspect solve(1000)}"
+  def responce, do: IO.puts "001 -> #{inspect solve(1000)}"
 end

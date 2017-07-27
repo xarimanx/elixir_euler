@@ -19,5 +19,5 @@ defmodule ElixirEuler.Problem003 do
     )
   end
 
-  def solve, do: IO.puts "003 -> #{inspect solve(600_851_475_143)}"
+  def responce, do: IO.puts "003 -> #{inspect solve(600_851_475_143)}"
 end

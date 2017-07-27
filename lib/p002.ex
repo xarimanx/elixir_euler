@@ -17,5 +17,5 @@ defmodule ElixirEuler.Problem002 do
   def fib(0), do: 0
   def fib(1), do: 1
   def fib(n), do: fib(n-1) + fib(n-2)
-  def solve, do: IO.puts "002 -> #{inspect solve(4000000)}"
+  def responce, do: IO.puts "002 -> #{inspect solve(4000000)}"
 end
