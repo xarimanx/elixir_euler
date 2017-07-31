@@ -12,10 +12,9 @@ defmodule ElixirEuler.Problem009 do
     |> List.flatten
     |> Enum.map(fn({a, b}) -> {a, b, n-a-b} end)
     |> Enum.find(&pythagorean?/1)
-    |> (fn(x) -> multiple(x) end).()
+    |> (fn({a,b,c}) -> a*b*c end).()
   end
 
-  def multiple({a,b,c}), do: a*b*c
   def pythagorean?({a,b,c}), do: a*a+b*b == c*c
 
   def responce, do: IO.puts "009 -> #{inspect solve(1000)}"
